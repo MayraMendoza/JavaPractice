@@ -18,6 +18,7 @@ public class Substrings{
     Returns a string that is a substring of this string. The substring begins at the specified beginIndex and extends to
     the character at index endIndex - 1. Thus the length of the substring is endIndex-beginIndex.
     "hamburger".substring(4, 8) returns "urge"
+    "ilovetocode".substring(1,5) returns "love"
    */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
