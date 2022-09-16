@@ -1,4 +1,4 @@
-package com.careerdevs.HastSetPractice.models;
+package com.hackerrankalgorithms;
 
 import java.util.HashSet;
 import java.util.Set;

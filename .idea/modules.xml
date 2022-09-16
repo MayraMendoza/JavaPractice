@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HashSetPractice.iml" filepath="$PROJECT_DIR$/HashSetPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hackerRankAlgorithms.iml" filepath="$PROJECT_DIR$/hackerRankAlgorithms.iml" />
     </modules>
   </component>
 </project>
