@@ -25,29 +25,29 @@ class BirthdayCakeCandles {
 
     public static int birthdayCakeCandles(List<Integer> candles) {
         // Write your code here
-        // Collections.sort(candles, Collections.reverseOrder());
-        // int countHeighestCandles = 1;
-        // int max=candles.get(0);
-        // for(int i=1; i<candles.size();i++){
-        //     if(max==candles.get(i)){
-        //         countHeighestCandles++;
-        //     }
-        // }
-        // return(countHeighestCandles);
+         Collections.sort(candles, Collections.reverseOrder());
+         int countHeighestCandles = 1;
+         int max=candles.get(0);
+         for(int i=1; i<candles.size();i++){
+             if(max==candles.get(i)){
+                 countHeighestCandles++;
+             }
+         }
+         return(countHeighestCandles);
 
-        int highestCandleCount=0;
-        int max=0;
-        for(int i=0; i<candles.size();i++){
-            if(candles.get(i)>max){
-                max= candles.get(i);
-                highestCandleCount =1;
-
-            }
-            else if(max== candles.get(i)){
-                highestCandleCount++;
-            }
-        }
-        return(highestCandleCount);
+//        int highestCandleCount=0;
+//        int max=0;
+//        for(int i=0; i<candles.size();i++){
+//            if(candles.get(i)>max){
+//                max= candles.get(i);
+//                highestCandleCount =1;
+//
+//            }
+//            else if(max== candles.get(i)){
+//                highestCandleCount++;
+//            }
+//        }
+//        return(highestCandleCount);
 
 
     }
