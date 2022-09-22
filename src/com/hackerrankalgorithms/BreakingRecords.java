@@ -22,6 +22,7 @@ class BreakingRecords {
      *
      * The function is expected to return an INTEGER_ARRAY.
      * The function accepts INTEGER_ARRAY scores as parameter.
+     *
      */
 
     public static List<Integer> breakingRecords(List<Integer> scores) {
