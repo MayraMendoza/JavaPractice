@@ -27,31 +27,60 @@ class BreakingRecords {
 
     public static List<Integer> breakingRecords(List<Integer> scores) {
         // Write your code here
-        int min = scores.get(0);
-        int max=scores.get(0);
 
-        List<Integer> breakingRecords = new ArrayList<>(Arrays.asList(0,0));
+        int minRecordCount =0;
+        int MaxRecordCount= 0 ;
+        int minScore = scores.get(0);
+        int maxScore = scores.get(0);
+        ArrayList<Integer> finalScoreCount = new ArrayList<>();
 
-        for(int i=1; i< scores.size();i++){
+        for (int i=0; i< scores.size();i++){
+            int currentScore = scores.get(i);
 
-            if(max > scores.get(i)){
-                max = scores.get(i);
-                breakingRecords.set(1,breakingRecords.get(1)+1);
+            if(currentScore> maxScore){
+                maxScore= currentScore;
+                MaxRecordCount++;
             }
-            if( min< scores.get(i)){
-                min = scores.get(i);
-                breakingRecords.set(0, breakingRecords.get(0)+1);
+            if(currentScore <minScore){
+                minScore=currentScore;
+                minRecordCount++;
             }
-
-
-
 
 
         }
-        return breakingRecords;
+        finalScoreCount.add(MaxRecordCount);
+        finalScoreCount.add(minRecordCount);
 
-    }
-}
+
+
+        return finalScoreCount;
+    }}
+        // Write your code here
+//        int min = scores.get(0);
+//        int max=scores.get(0);
+//
+//        List<Integer> breakingRecords = new ArrayList<>(Arrays.asList(0,0));
+//
+//        for(int i=1; i< scores.size();i++){
+//
+//            if(max > scores.get(i)){
+//                max = scores.get(i);
+//                breakingRecords.set(1,breakingRecords.get(1)+1);
+//            }
+//            if( min< scores.get(i)){
+//                min = scores.get(i);
+//                breakingRecords.set(0, breakingRecords.get(0)+1);
+//            }
+//
+//
+//
+//
+//
+//        }
+//        return breakingRecords;
+//
+//    }
+//}
 
 //public class Solution {
 //    public static void main(String[] args) throws IOException {
